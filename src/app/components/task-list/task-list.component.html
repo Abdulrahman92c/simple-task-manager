@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <app-filter (filterChange)="applyFilter($event)"></app-filter>
+
+  <ul class="list-group mt-3">
+    <li *ngFor="let task of filteredTasks" class="list-group-item d-flex justify-content-between align-items-center">
+      <app-task-item [task]="task" (deleteTaskEvent)="deleteTask($event)"></app-task-item>
+    </li>
+  </ul>
+</div>

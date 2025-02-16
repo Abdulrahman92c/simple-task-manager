@@ -1,0 +1,8 @@
+<div class="filter-container d-flex align-items-center gap-3">
+  <label for="statusFilter" class="fw-bold">Filtrer par statut :</label>
+  <select id="statusFilter" class="form-select w-50" (change)="onFilterChange($event)">
+    <option value="all">Toutes</option>
+    <option value="completed">Complétées</option>
+    <option value="pending">En attente</option>
+  </select>
+</div>
