@@ -28,9 +28,8 @@ const routes: Routes = [
     BrowserModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(routes)
-  ],
+    ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: []
